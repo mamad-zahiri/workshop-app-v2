@@ -19,8 +19,8 @@ const AddPersonnelActivityFormElm = () => {
         اضافه کردن فعالیت پرسنل
       </h3>
 
-      <form action='#' className='mx-2'>
-        <div className='flex gap-x-2'>
+      <form action='#' className='mx-2 overflow-scroll'>
+        <div className='flex gap-x-2 flex-col sm:flex-row'>
           <div className='mb-5 w-full'>
             <label className='mb-2.5 block text-black dark:text-white'>کد تولید</label>
             <div className='relative group'>
@@ -116,7 +116,7 @@ const AddPersonnelActivityFormElm = () => {
           </div>
         </div>
 
-        <div className='flex gap-x-2'>
+        <div className='flex gap-x-2 flex-col sm:flex-row'>
           <div className='mb-5 w-full'>
             <label className='mb-2.5 block text-black dark:text-white'>پرسنل</label>
             <div className='relative group'>
@@ -185,7 +185,7 @@ const AddPersonnelActivityFormElm = () => {
           </div> */}
         </div>
 
-        <div className='flex gap-x-2'>
+        <div className='flex gap-x-2 flex-col sm:flex-row'>
           <div className='mb-5 w-full'>
             <label className='mb-2.5 block text-black dark:text-white'>
               تاریخ دریافت
@@ -213,16 +213,7 @@ const AddPersonnelActivityFormElm = () => {
           </div>
         </div>
 
-        {/* <div className='mb-5'>
-          <label className='mb-2.5 block text-black dark:text-white'>تعداد</label>
-          <input
-            type='number'
-            placeholder='۱۲'
-            className='w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary'
-          />
-        </div> */}
-
-        <div className='flex gap-x-2'>
+        <div className='flex gap-x-2 flex-col sm:flex-row'>
           <div className='mb-5 w-full'>
             <label className='mb-2.5 block text-black dark:text-white'>تاریخ تحویل</label>
 

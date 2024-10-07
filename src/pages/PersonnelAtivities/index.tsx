@@ -90,7 +90,7 @@ const PersonnelActivities = () => {
       <Modal
         onClose={handleClose}
         open={open}
-        className='absolute flex w-full h-full justify-center items-center'>
+        className='absolute flex w-full h-full justify-center items-center overflow-scroll'>
         <AddPersonnelActivityFormElm />
       </Modal>
     </>
