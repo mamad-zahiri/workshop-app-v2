@@ -11,7 +11,7 @@ console.log(res)
 
 const activities: Array<PersonnelActivity> = [
   {
-    productionCode: "h9p49m",
+    productionCode: "14000323T1-1500",
     assignedAt: "2020-08-05T13:17:27Z",
     activity: "لحیم کاری",
     number: "5,768",
@@ -21,7 +21,7 @@ const activities: Array<PersonnelActivity> = [
     wasteMaterials: [],
   },
   {
-    productionCode: "dhff97",
+    productionCode: "14000323T1-1500",
     assignedAt: "2020-12-13T13:17:27.853707Z",
     activity: "وارنیش",
     number: "4,635",
@@ -31,7 +31,7 @@ const activities: Array<PersonnelActivity> = [
     wasteMaterials: [],
   },
   {
-    productionCode: "h7cths",
+    productionCode: "14000323T1-1500",
     assignedAt: "2020-03-22T13:17:27.853707Z",
     activity: "پرس سرسیم",
     number: "4,290",
@@ -41,7 +41,7 @@ const activities: Array<PersonnelActivity> = [
     wasteMaterials: [],
   },
   {
-    productionCode: "gzmk9z",
+    productionCode: "14000323T1-1500",
     assignedAt: "2020-03-22T13:17:27.853707Z",
     activity: "بسته بندی",
     number: "3,580",
@@ -51,7 +51,7 @@ const activities: Array<PersonnelActivity> = [
     wasteMaterials: [],
   },
   {
-    productionCode: "xn73gq",
+    productionCode: "14000323T1-1500",
     assignedAt: "2020-03-22T13:17:27.853707Z",
     activity: "لحیم کاری",
     number: "6,768",
@@ -77,7 +77,7 @@ const PersonnelActivities = () => {
     <>
       <Breadcrumb pageName='فعالیت پرسنل' />
 
-      <div className='flex flex-col p-2 rounded-md overflow-hidden bg-slate-50 dark:bg-black shadow-lg'>
+      <div className='flex flex-col p-2 rounded-md overflow-hidden bg-transparent sm:bg-slate-50 dark:bg-black shadow-lg'>
         <PersonnelActivitiesTableElm activities={activities} />
       </div>
 
