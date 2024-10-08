@@ -1,7 +1,6 @@
 import { useState } from "react"
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb"
 import ActivitiesTableElm from "./ActivitiesTable"
-import { allTasks } from "./server"
 import { Modal } from "@mui/material"
 import AddAvailableActivityFormElm from "./AddAvailableActivityForm"
 
@@ -69,7 +68,7 @@ const AvailableActivitiesElm = () => {
 
   return (
     <>
-      <Breadcrumb pageName='فعالیت های موجود' />
+      <Breadcrumb pageName='فعالیت های تولید سنسور' />
 
       <div className='flex flex-col p-2 rounded-md overflow-hidden bg-slate-50 dark:bg-black shadow-lg'>
         <ActivitiesTableElm activities={activities} />

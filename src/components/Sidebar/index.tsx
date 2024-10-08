@@ -97,7 +97,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
 
             <ul className='mb-6 flex flex-col gap-1.5'>
               {/* <!-- Menu Item Products --> */}
-              <li>
+              <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/products'
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
@@ -110,7 +110,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Products --> */}
 
               {/* <!-- Menu Item Materials --> */}
-              <li>
+              <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/materials'
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
@@ -123,7 +123,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Materials --> */}
 
               {/* <!-- Menu Item Personnel Activities --> */}
-              <li>
+              <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/personnel-activities'
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
@@ -137,7 +137,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Personnel Activities --> */}
 
               {/* <!-- Menu Item Personnel Management --> */}
-              <li>
+              <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/personnel-management'
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
@@ -151,7 +151,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Personnel Management --> */}
 
               {/* <!-- Menu Item Personnel Management --> */}
-              <li>
+              <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/available-activities'
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
@@ -165,7 +165,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               {/* <!-- Menu Item Personnel Management --> */}
 
               {/* <!-- Menu Item Porfile --> */}
-              <li>
+              <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/profile'
                   className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${

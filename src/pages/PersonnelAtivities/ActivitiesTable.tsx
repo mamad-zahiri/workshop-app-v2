@@ -53,17 +53,17 @@ const PersonnelActivitiesTableElm = ({
           className={`flex-col sm:flex-row mb-10 sm:mb-0 hover:bg-slate-200 dark:hover:bg-slate-700 flex justify-start ${
             key === activities.length - 1
               ? ""
-              : "border-b border-stroke dark:border-strokedark"
+              : "border-b border-slate-400 pb-4 sm:pb-0 sm:border-stroke dark:border-strokedark"
           }  gap-0`}
           key={key}>
-          <div className='p-2 sm:text-center py-4 w-full text-right sm:w-30'>
+          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-30'>
             <p className='text-black dark:text-white'>
               <span className='inline-block sm:hidden me-2'>کد تولید:</span>
               {item.productionCode.toUpperCase()}
             </p>
           </div>
 
-          <div className='p-2 sm:text-center py-4 w-full text-right sm:w-35'>
+          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-35'>
             <p className='text-black dark:text-white' dir='ltr'>
               {latinToPersianDigit(datetimeToStr(item.assignedAt))}
               <span className='inline-block sm:hidden me-2' dir='rtl'>
@@ -72,21 +72,21 @@ const PersonnelActivitiesTableElm = ({
             </p>
           </div>
 
-          <div className='p-2 sm:text-center py-4 w-full text-right sm:w-25'>
+          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-25'>
             <p className='text-black dark:text-white'>
               <span className='inline-block sm:hidden me-2'>فعالیت:</span>
               {item.activity}
             </p>
           </div>
 
-          <div className='p-2 sm:text-center py-4 w-full text-right sm:w-22'>
+          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-22'>
             <p className='text-black dark:text-white'>
               <span className='inline-block sm:hidden me-2'>تعداد:</span>
               {latinToPersianDigit(item.number)}
             </p>
           </div>
 
-          <div className='p-2 sm:text-center py-4 w-full text-right sm:w-35'>
+          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-35'>
             <p className='text-black dark:text-white' dir='ltr'>
               {latinToPersianDigit(datetimeToStr(item.finsishedAt))}
               <span className='inline-block sm:hidden me-2' dir='rtl'>
@@ -95,7 +95,7 @@ const PersonnelActivitiesTableElm = ({
             </p>
           </div>
 
-          <div className='p-2 sm:text-center py-4 w-full text-right sm:w-64'>
+          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-64'>
             <p className='text-black dark:text-white'>
               <span className='inline-block sm:hidden me-2'>
                 ابزار و مواد امانت داده شده:
@@ -104,7 +104,7 @@ const PersonnelActivitiesTableElm = ({
             </p>
           </div>
 
-          <div className='p-2 sm:text-center py-4 w-full text-right sm:w-26'>
+          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-26'>
             <p className='text-black dark:text-white'>
               <span className='inline-block sm:hidden me-2'>کد پرسنلی:</span>
 
@@ -112,14 +112,14 @@ const PersonnelActivitiesTableElm = ({
             </p>
           </div>
 
-          <div className='p-2 sm:text-center py-4 w-full text-right sm:w-40'>
+          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-40'>
             <p className='text-black dark:text-white'>
               <span className='inline-block sm:hidden me-2'>ضایعات:</span>
               {item.wasteMaterials.join("، ") || "-"}
             </p>
           </div>
 
-          <div className='p-2 text-center py-4 max-w-fit flex gap-4'>
+          <div className='p-2 text-center sm:py-4 max-w-fit flex gap-4'>
             <button className='rounded-lg bg-lime-600 text-white px-2 py-1 text-sm'>
               پایان کار
             </button>
