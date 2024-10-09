@@ -1,10 +1,8 @@
-import { Modal } from "@mui/material"
-import { useState } from "react"
+import { Link } from "react-router-dom"
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb"
 import { PersonnelActivity } from "../../types"
 import { userTasks } from "../AvailableAtivities/server"
 import PersonnelActivitiesTableElm from "./ActivitiesTable"
-import AddPersonnelActivityFormElm from "./AddPersonnelActivityForm"
 
 const res = await userTasks()
 console.log(res)
@@ -63,16 +61,6 @@ const activities: Array<PersonnelActivity> = [
 ]
 
 const PersonnelActivities = () => {
-  const [open, setOpen] = useState(false)
-
-  const handleClose = () => {
-    setOpen(false)
-  }
-
-  const handleOpen = () => {
-    setOpen(true)
-  }
-
   return (
     <>
       <Breadcrumb pageName='فعالیت پرسنل' />
@@ -81,18 +69,11 @@ const PersonnelActivities = () => {
         <PersonnelActivitiesTableElm activities={activities} />
       </div>
 
-      <div
-        className='fixed bottom-10 left-10 rounded-lg w-10 h-10 bg-cyan-600 flex justify-center p-1.5 hover:cursor-pointer'
-        onClick={handleOpen}>
-        <img src='/plus.png' alt='' />
-      </div>
-
-      <Modal
-        onClose={handleClose}
-        open={open}
-        className='absolute flex w-full h-full justify-center items-center overflow-scroll'>
-        <AddPersonnelActivityFormElm />
-      </Modal>
+      <Link to='/personnel-activities/add'>
+        <div className='fixed bottom-10 left-10 rounded-lg w-10 h-10 bg-cyan-600 flex justify-center p-1.5 hover:cursor-pointer'>
+          <img src='/plus.png' alt='' />
+        </div>
+      </Link>
     </>
   )
 }

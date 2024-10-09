@@ -159,7 +159,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                     "bg-graydark dark:bg-meta-4"
                   }`}>
                   <img src='/activities_list.png' className='h-5' />
-                  فعالیت‌های موجود
+                  فعالیت های تولید سنسور
                 </NavLink>
               </li>
               {/* <!-- Menu Item Personnel Management --> */}

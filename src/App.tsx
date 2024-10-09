@@ -11,6 +11,11 @@ import PersonnelManagementElm from "./pages/PersonnelManagement"
 import Products from "./pages/Products"
 import { Modals } from "./pages/UiElements/Modals"
 import AvailableActivitiesElm from "./pages/AvailableAtivities"
+import Profile from "./pages/Profile"
+import AddPersonnelActivityFormElm from "./pages/PersonnelAtivities/AddPersonnelActivityForm"
+import AddPersonnelActivityForm from "./pages/AddPersonnelAtivities"
+import AddProductFormElm from "./pages/Products/AddProductForm"
+import AddProductForm from "./pages/AddProducts"
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true)
@@ -40,6 +45,16 @@ function App() {
         />
 
         <Route
+          path='/products/add'
+          element={
+            <>
+              <PageTitle title='اضافه کردن محصولات' />
+              <AddProductForm/>
+            </>
+          }
+        />
+
+        <Route
           path='/materials'
           element={
             <>
@@ -60,6 +75,16 @@ function App() {
         />
 
         <Route
+          path='/personnel-activities/add'
+          element={
+            <>
+              <PageTitle title='اضافه کردن فعالیت پرسنل' />
+              <AddPersonnelActivityForm />
+            </>
+          }
+        />
+
+        <Route
           path='/personnel-management'
           element={
             <>
@@ -69,11 +94,11 @@ function App() {
           }
         />
 
-<Route
+        <Route
           path='/available-activities'
           element={
             <>
-              <PageTitle title='فعالیت‌های موجود' />
+              <PageTitle title='فعالیت‌های تولید سنسور' />
               <AvailableActivitiesElm />
             </>
           }
@@ -84,7 +109,7 @@ function App() {
           element={
             <>
               <PageTitle title='Profile' />
-              <Modals />
+              <Profile />
             </>
           }
         />
