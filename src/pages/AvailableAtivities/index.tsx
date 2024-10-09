@@ -1,8 +1,8 @@
 import { useState } from "react"
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb"
 import ActivitiesTableElm from "./ActivitiesTable"
-import { Modal } from "@mui/material"
 import AddAvailableActivityFormElm from "./AddAvailableActivityForm"
+import { Link } from "react-router-dom"
 
 const activities = [
   {
@@ -55,17 +55,7 @@ const activities = [
   },
 ]
 
-const AvailableActivitiesElm = () => {
-  const [open, setOpen] = useState(false)
-
-  const handleClose = () => {
-    setOpen(false)
-  }
-
-  const handleOpen = () => {
-    setOpen(true)
-  }
-
+const AvailableActivities = () => {
   return (
     <>
       <Breadcrumb pageName='فعالیت های تولید سنسور' />
@@ -74,20 +64,13 @@ const AvailableActivitiesElm = () => {
         <ActivitiesTableElm activities={activities} />
       </div>
 
-      <div
-        className='fixed bottom-10 left-10 rounded-lg w-10 h-10 bg-cyan-600 flex justify-center p-1.5 hover:cursor-pointer'
-        onClick={handleOpen}>
-        <img src='/plus.png' alt='' />
-      </div>
-
-      <Modal
-        onClose={handleClose}
-        open={open}
-        className='absolute flex w-full h-full justify-center items-center'>
-        <AddAvailableActivityFormElm />
-      </Modal>
+      <Link to='/available-activities/add'>
+        <div className='fixed bottom-10 left-10 rounded-lg w-10 h-10 bg-cyan-600 flex justify-center p-1.5 hover:cursor-pointer'>
+          <img src='/plus.png' alt='' />
+        </div>
+      </Link>
     </>
   )
 }
 
-export default AvailableActivitiesElm
+export default AvailableActivities

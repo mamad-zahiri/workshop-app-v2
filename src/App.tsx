@@ -4,18 +4,16 @@ import { Route, Routes, useLocation } from "react-router-dom"
 import Loader from "./common/Loader"
 import PageTitle from "./components/PageTitle"
 import DefaultLayout from "./layout/DefaultLayout"
+import AddPersonnelActivityForm from "./pages/AddPersonnelAtivities"
+import AddProductForm from "./pages/AddProducts"
 import SignIn from "./pages/Authentication/SignIn"
+import AvailableActivitiesElm from "./pages/AvailableAtivities"
 import MaterialsElm from "./pages/Materials"
 import PersonnelActivities from "./pages/PersonnelAtivities"
 import PersonnelManagementElm from "./pages/PersonnelManagement"
 import Products from "./pages/Products"
-import { Modals } from "./pages/UiElements/Modals"
-import AvailableActivitiesElm from "./pages/AvailableAtivities"
 import Profile from "./pages/Profile"
-import AddPersonnelActivityFormElm from "./pages/PersonnelAtivities/AddPersonnelActivityForm"
-import AddPersonnelActivityForm from "./pages/AddPersonnelAtivities"
-import AddProductFormElm from "./pages/Products/AddProductForm"
-import AddProductForm from "./pages/AddProducts"
+import AddAvailableActivities from "./pages/AddAvailableAtivities"
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true)
@@ -49,7 +47,7 @@ function App() {
           element={
             <>
               <PageTitle title='اضافه کردن محصولات' />
-              <AddProductForm/>
+              <AddProductForm />
             </>
           }
         />
@@ -104,6 +102,15 @@ function App() {
           }
         />
 
+        <Route
+          path='/available-activities/add'
+          element={
+            <>
+              <PageTitle title='فعالیت‌های تولید سنسور' />
+              <AddAvailableActivities />
+            </>
+          }
+        />
         <Route
           path='/profile'
           element={
