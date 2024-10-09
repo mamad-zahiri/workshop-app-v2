@@ -57,7 +57,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   return (
     <aside
       ref={sidebar}
-      className={`absolute right-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black duration-300 ease-linear dark:bg-boxdark lg:static lg:translate-x-0 ${
+      className={`absolute right-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-black duration-300 ease-linear  lg:static lg:translate-x-0 ${
         sidebarOpen ? "translate-x-0" : "translate-x-full"
       }`}>
       {/* <!-- SIDEBAR HEADER --> */}
@@ -100,8 +100,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/products'
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("products") && "bg-graydark dark:bg-meta-4"
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark ${
+                    pathname.includes("products") && "bg-graydark "
                   }`}>
                   <img src='/products.png' className='h-5' />
                   محصولات
@@ -113,8 +113,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/materials'
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("materials") && "bg-graydark dark:bg-meta-4"
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark ${
+                    pathname.includes("materials") && "bg-graydark "
                   }`}>
                   <img src='/materials.png' className='h-5' />
                   مواد اولیه
@@ -126,9 +126,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/personnel-activities'
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("personnel-activities") &&
-                    "bg-graydark dark:bg-meta-4"
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark ${
+                    pathname.includes("personnel-activities") && "bg-graydark "
                   }`}>
                   <img src='/personnel_activities.png' className='h-5' />
                   فعالیت پرسنل
@@ -140,9 +139,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/personnel-management'
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("personnel-management") &&
-                    "bg-graydark dark:bg-meta-4"
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark ${
+                    pathname.includes("personnel-management") && "bg-graydark "
                   }`}>
                   <img src='/management.png' className='h-5' />
                   مدیریت پرسنل
@@ -154,9 +152,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/available-activities'
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("available-activities") &&
-                    "bg-graydark dark:bg-meta-4"
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark ${
+                    pathname.includes("available-activities") && "bg-graydark "
                   }`}>
                   <img src='/activities_list.png' className='h-5' />
                   فعالیت های تولید سنسور
@@ -168,8 +165,8 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li onClick={() => setSidebarOpen(false)}>
                 <NavLink
                   to='/profile'
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4 ${
-                    pathname.includes("profile") && "bg-graydark dark:bg-meta-4"
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark ${
+                    pathname.includes("profile") && "bg-graydark "
                   }`}>
                   <svg
                     className='fill-current'

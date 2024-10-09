@@ -64,7 +64,7 @@ const PersonnelManagementElm = () => {
     <>
       <Breadcrumb pageName='مدیریت پرسنل' />
 
-      <div className='flex flex-col p-2 rounded-md overflow-hidden bg-slate-50 dark:bg-black shadow-lg'>
+      <div className='flex flex-col p-2 rounded-md overflow-hidden bg-slate-50  shadow-lg'>
         <PersonnelActivitiesTableElm personnel={personnel} />
       </div>
     </>

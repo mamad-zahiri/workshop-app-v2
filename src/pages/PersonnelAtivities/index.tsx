@@ -65,7 +65,7 @@ const PersonnelActivities = () => {
     <>
       <Breadcrumb pageName='فعالیت پرسنل' />
 
-      <div className='flex flex-col p-2 rounded-md overflow-hidden bg-transparent sm:bg-slate-50 dark:bg-black shadow-lg'>
+      <div className='flex flex-col p-2 rounded-md overflow-hidden bg-transparent sm:bg-slate-50  shadow-lg'>
         <PersonnelActivitiesTableElm activities={activities} />
       </div>
 

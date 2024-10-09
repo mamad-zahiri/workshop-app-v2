@@ -34,29 +34,29 @@ export function Modals() {
           onClose={handleClose}
           open={open}
           className='absolute flex w-full h-full justify-center items-center'>
-          <div className='rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark'>
-            <div className='border-b border-stroke py-4 px-6.5 dark:border-strokedark'>
-              <h3 className='font-medium text-black dark:text-white'>Sign In Form</h3>
+          <div className='rounded-sm border border-stroke bg-white shadow-default  '>
+            <div className='border-b border-stroke py-4 px-6.5 '>
+              <h3 className='font-medium text-black '>Sign In Form</h3>
             </div>
             <form action='#'>
               <div className='p-6.5'>
                 <div className='mb-4.5'>
-                  <label className='mb-2.5 block text-black dark:text-white'>Email</label>
+                  <label className='mb-2.5 block text-black '>Email</label>
                   <input
                     type='email'
                     placeholder='Enter your email address'
-                    className='w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary'
+                    className='w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter'
                   />
                 </div>
 
                 <div>
-                  <label className='mb-2.5 block text-black dark:text-white'>
+                  <label className='mb-2.5 block text-black '>
                     Password
                   </label>
                   <input
                     type='password'
                     placeholder='Enter password'
-                    className='w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary'
+                    className='w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter'
                   />
                 </div>
 
@@ -68,7 +68,7 @@ export function Modals() {
                         id='formCheckbox'
                         className='taskCheckbox sr-only'
                       />
-                      <div className='box mr-3 flex h-5 w-5 items-center justify-center rounded border border-stroke dark:border-strokedark'>
+                      <div className='box mr-3 flex h-5 w-5 items-center justify-center rounded border border-stroke '>
                         <span className='text-white opacity-0'>
                           <svg
                             className='fill-current'
@@ -117,10 +117,10 @@ export function Modals() {
 //     <>
 //       <Breadcrumb pageName='Modals' />
 
-//       <div className='rounded-md border border-stroke bg-white p-4 shadow-default dark:border-strokedark dark:bg-boxdark md:p-6 xl:p-9'>
+//       <div className='rounded-md border border-stroke bg-white p-4 shadow-default   md:p-6 xl:p-9'>
 //         <div className='flex flex-col gap-7.5'>
 //           {/* <!-- Alerts Item --> */}
-//           <div className='flex w-full border-l-6 border-warning bg-warning bg-opacity-[15%] px-7 py-8 shadow-md dark:bg-[#1B1B24] dark:bg-opacity-30 md:p-9'>
+//           <div className='flex w-full border-l-6 border-warning bg-warning bg-opacity-[15%] px-7 py-8 shadow-md [#1B1B24]  md:p-9'>
 //             <div className='mr-5 flex h-9 w-9 items-center justify-center rounded-lg bg-warning bg-opacity-30'>
 //               <svg
 //                 width='19'
@@ -145,7 +145,7 @@ export function Modals() {
 //             </div>
 //           </div>
 //           {/* <!-- Alerts Item --> */}
-//           <div className='flex w-full border-l-6 border-[#34D399] bg-[#34D399] bg-opacity-[15%] px-7 py-8 shadow-md dark:bg-[#1B1B24] dark:bg-opacity-30 md:p-9'>
+//           <div className='flex w-full border-l-6 border-[#34D399] bg-[#34D399] bg-opacity-[15%] px-7 py-8 shadow-md [#1B1B24]  md:p-9'>
 //             <div className='mr-5 flex h-9 w-full max-w-[36px] items-center justify-center rounded-lg bg-[#34D399]'>
 //               <svg
 //                 width='16'
@@ -160,7 +160,7 @@ export function Modals() {
 //               </svg>
 //             </div>
 //             <div className='w-full'>
-//               <h5 className='mb-3 text-lg font-semibold text-black dark:text-[#34D399] '>
+//               <h5 className='mb-3 text-lg font-semibold text-black [#34D399] '>
 //                 Message Sent Successfully
 //               </h5>
 //               <p className='text-base leading-relaxed text-body'>
@@ -169,7 +169,7 @@ export function Modals() {
 //             </div>
 //           </div>
 //           {/* <!-- Alerts Item --> */}
-//           <div className='flex w-full border-l-6 border-[#F87171] bg-[#F87171] bg-opacity-[15%] px-7 py-8 shadow-md dark:bg-[#1B1B24] dark:bg-opacity-30 md:p-9'>
+//           <div className='flex w-full border-l-6 border-[#F87171] bg-[#F87171] bg-opacity-[15%] px-7 py-8 shadow-md [#1B1B24]  md:p-9'>
 //             <div className='mr-5 flex h-9 w-full max-w-[36px] items-center justify-center rounded-lg bg-[#F87171]'>
 //               <svg
 //                 width='13'

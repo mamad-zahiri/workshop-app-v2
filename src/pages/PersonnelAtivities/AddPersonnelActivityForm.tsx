@@ -14,20 +14,20 @@ const AddPersonnelActivityFormElm = () => {
   const DeliveryDatepickerRef = useRef<DatePickerRef>()
 
   return (
-    <div className='rounded-lg bg-white shadow-default dark:bg-boxdark p-4 w-150'>
-      <h3 className='mb-6 text-center font-semibold text-lg text-black dark:text-white'>
+    <div className='rounded-lg bg-white shadow-default  p-4 w-150'>
+      <h3 className='mb-6 text-center font-semibold text-lg text-black '>
         اضافه کردن فعالیت پرسنل
       </h3>
 
       <form action='#' className='mx-2 overflow-scroll'>
         <div className='flex gap-x-2 flex-col sm:flex-row'>
           <div className='mb-5 w-full'>
-            <label className='mb-2.5 block text-black dark:text-white'>کد تولید</label>
+            <label className='mb-2.5 block text-black '>کد تولید</label>
             <div className='relative group'>
               <button
                 type='button'
                 onClick={() => setShowProductCodeMenu((old) => !old)}
-                className='inline-flex justify-center rounded w-full border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary'>
+                className='inline-flex justify-center rounded w-full border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter'>
                 <span className='mr-2'>انتخاب</span>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -68,14 +68,14 @@ const AddPersonnelActivityFormElm = () => {
           </div>
 
           <div className='mb-5 w-full'>
-            <label className='mb-2.5 block text-black dark:text-white'>
+            <label className='mb-2.5 block text-black '>
               ابزار و مواد
             </label>
             <div className='relative group'>
               <button
                 type='button'
                 onClick={() => setShowActivitiesMenu((old) => !old)}
-                className='inline-flex justify-center rounded w-full border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary'>
+                className='inline-flex justify-center rounded w-full border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter'>
                 <span className='mr-2'>انتخاب</span>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -118,12 +118,12 @@ const AddPersonnelActivityFormElm = () => {
 
         <div className='flex gap-x-2 flex-col sm:flex-row'>
           <div className='mb-5 w-full'>
-            <label className='mb-2.5 block text-black dark:text-white'>پرسنل</label>
+            <label className='mb-2.5 block text-black '>پرسنل</label>
             <div className='relative group'>
               <button
                 type='button'
                 onClick={() => setShowPersonnelMenu((old) => !old)}
-                className='inline-flex justify-center rounded w-full border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary'>
+                className='inline-flex justify-center rounded w-full border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter'>
                 <span className='mr-2'>انتخاب</span>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -164,19 +164,19 @@ const AddPersonnelActivityFormElm = () => {
           </div>
 
           <div className='mb-5 w-full'>
-            <label className='mb-2.5 block text-black dark:text-white'>تعداد</label>
+            <label className='mb-2.5 block text-black '>تعداد</label>
             <input
               type='number'
               placeholder='۱۲'
-              className='w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary'
+              className='w-full rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter'
             />
           </div>
 
           {/* <div className='mb-5 w-full'>
-            <label className='mb-2.5 block text-black dark:text-white'>ساعت دریافت</label>
+            <label className='mb-2.5 block text-black '>ساعت دریافت</label>
 
             <DatePicker
-              containerClassName='rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 w-full text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary [&>input]:border-none'
+              containerClassName='rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 w-full text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter [&>input]:border-none'
               disableDayPicker
               format='HH:mm:ss'
               value={new Date()}
@@ -187,13 +187,13 @@ const AddPersonnelActivityFormElm = () => {
 
         <div className='flex gap-x-2 flex-col sm:flex-row'>
           <div className='mb-5 w-full'>
-            <label className='mb-2.5 block text-black dark:text-white'>
+            <label className='mb-2.5 block text-black '>
               تاریخ دریافت
             </label>
 
             <DatePicker
               ref={ReceiveDatepickerRef}
-              containerClassName='rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 w-full text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary [&>input]:border-none'
+              containerClassName='rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 w-full text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter [&>input]:border-none'
               calendar={persian}
               locale={persian_fa}
               value={new Date()}
@@ -201,10 +201,10 @@ const AddPersonnelActivityFormElm = () => {
           </div>
 
           <div className='mb-5 w-full'>
-            <label className='mb-2.5 block text-black dark:text-white'>ساعت دریافت</label>
+            <label className='mb-2.5 block text-black '>ساعت دریافت</label>
 
             <DatePicker
-              containerClassName='rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 w-full text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary [&>input]:border-none'
+              containerClassName='rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 w-full text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter [&>input]:border-none'
               disableDayPicker
               format='HH:mm:ss'
               value={new Date()}
@@ -215,11 +215,11 @@ const AddPersonnelActivityFormElm = () => {
 
         <div className='flex gap-x-2 flex-col sm:flex-row'>
           <div className='mb-5 w-full'>
-            <label className='mb-2.5 block text-black dark:text-white'>تاریخ تحویل</label>
+            <label className='mb-2.5 block text-black '>تاریخ تحویل</label>
 
             <DatePicker
               ref={DeliveryDatepickerRef}
-              containerClassName='rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 w-full text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary [&>input]:border-none'
+              containerClassName='rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 w-full text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter [&>input]:border-none'
               calendar={persian}
               locale={persian_fa}
               value={new Date()}
@@ -227,10 +227,10 @@ const AddPersonnelActivityFormElm = () => {
           </div>
 
           <div className='mb-5 w-full'>
-            <label className='mb-2.5 block text-black dark:text-white'>ساعت تحویل</label>
+            <label className='mb-2.5 block text-black '>ساعت تحویل</label>
 
             <DatePicker
-              containerClassName='rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 w-full text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary [&>input]:border-none'
+              containerClassName='rounded border-[1.5px] border-stroke bg-transparent py-3 px-5 w-full text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter [&>input]:border-none'
               disableDayPicker
               format='HH:mm:ss'
               value={new Date()}
