@@ -6,9 +6,9 @@ const AddPersonnelActivityForm = () => {
     <>
       <Breadcrumb pageName='اضافه کردن فعالیت پرسنل' />
 
-      <div className='flex flex-col p-2 rounded-md overflow-hidden bg-transparent sm:bg-slate-50  shadow-lg'>
-        <AddPersonnelActivityFormElm />
-      </div>
+      {/* <div className='flex flex-col p-2 rounded-md overflow-hidden bg-transparent sm:bg-slate-50  shadow-lg'> */}
+      <AddPersonnelActivityFormElm />
+      {/* </div> */}
     </>
   )
 }

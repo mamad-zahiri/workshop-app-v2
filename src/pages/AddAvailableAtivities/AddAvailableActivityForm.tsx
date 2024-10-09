@@ -1,13 +1,9 @@
 const AddAvailableActivityFormElm = () => {
   return (
-    <div className='rounded-lg bg-white shadow-default  p-4 w-125'>
-      {/* <h3 className='mb-6 text-center font-semibold text-lg text-black '>
-        ثبت محصول جدید
-      </h3> */}
-
+    <div className='rounded-lg bg-white shadow-default  max-w-125'>
       <form action='#' className='mx-2'>
         <div className='mb-5'>
-          <label className='mb-2.5 block text-black '>نام محصول</label>
+          <label className='mb-2.5 block text-black'>نام محصول</label>
           <input
             type='text'
             placeholder='سنسور'
@@ -16,7 +12,7 @@ const AddAvailableActivityFormElm = () => {
         </div>
 
         <div className='mb-5'>
-          <label className='mb-4.5 block text-black '>کد محصول</label>
+          <label className='mb-4.5 block text-black'>کد محصول</label>
           <input
             type='text'
             placeholder='T'
@@ -25,9 +21,7 @@ const AddAvailableActivityFormElm = () => {
         </div>
 
         <div className='mb-5'>
-          <label className='mb-4.5 block text-black '>
-            قیمت واحد (تومان)
-          </label>
+          <label className='mb-4.5 block text-black'>قیمت واحد (تومان)</label>
           <input
             type='number'
             placeholder='35000'

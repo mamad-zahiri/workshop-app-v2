@@ -65,9 +65,7 @@ const PersonnelActivities = () => {
     <>
       <Breadcrumb pageName='فعالیت پرسنل' />
 
-      <div className='flex flex-col p-2 rounded-md overflow-hidden bg-transparent sm:bg-slate-50  shadow-lg'>
-        <PersonnelActivitiesTableElm activities={activities} />
-      </div>
+      <PersonnelActivitiesTableElm activities={activities} />
 
       <Link to='/personnel-activities/add'>
         <div className='fixed bottom-10 left-10 rounded-lg w-10 h-10 bg-cyan-600 flex justify-center p-1.5 hover:cursor-pointer'>

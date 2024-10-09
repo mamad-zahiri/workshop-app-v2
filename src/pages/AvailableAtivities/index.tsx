@@ -1,8 +1,6 @@
-import { useState } from "react"
+import { Link } from "react-router-dom"
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb"
 import ActivitiesTableElm from "./ActivitiesTable"
-import AddAvailableActivityFormElm from "./AddAvailableActivityForm"
-import { Link } from "react-router-dom"
 
 const activities = [
   {
@@ -60,9 +58,7 @@ const AvailableActivities = () => {
     <>
       <Breadcrumb pageName='فعالیت های تولید سنسور' />
 
-      <div className='flex flex-col p-2 rounded-md overflow-hidden bg-slate-50  shadow-lg'>
-        <ActivitiesTableElm activities={activities} />
-      </div>
+      <ActivitiesTableElm activities={activities} />
 
       <Link to='/available-activities/add'>
         <div className='fixed bottom-10 left-10 rounded-lg w-10 h-10 bg-cyan-600 flex justify-center p-1.5 hover:cursor-pointer'>

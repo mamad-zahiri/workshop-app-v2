@@ -14,7 +14,7 @@ const AddPersonnelActivityFormElm = () => {
   const DeliveryDatepickerRef = useRef<DatePickerRef>()
 
   return (
-    <div className='rounded-lg bg-white shadow-default  p-4 w-150'>
+    <div className='rounded-lg bg-white shadow-default  p-4 max-w-150'>
       <form action='#' className='mx-2'>
         <div className='flex gap-x-2 flex-col sm:flex-row'>
           <div className='mb-5 w-full'>

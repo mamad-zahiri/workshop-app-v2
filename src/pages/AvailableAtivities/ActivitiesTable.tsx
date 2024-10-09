@@ -25,9 +25,7 @@ const ActivitiesTableElm = ({ activities = [] }: { activities: Array<Activity> }
       {activities.map((item, key) => (
         <div
           className={`hover:bg-slate-200 flex justify-start ${
-            key === activities.length - 1
-              ? ""
-              : "border-b border-stroke "
+            key === activities.length - 1 ? "" : "border-b border-stroke "
           }  gap-0`}
           key={key}>
           <div className='p-2 text-start py-4 w-20'>

@@ -9,7 +9,7 @@ const PersonnelActivitiesTableElm = ({
   return (
     <>
       <div className='hidden sm:flex justify-start bg-transparent sm:bg-slate-100  border-b hover:[&>div]:bg-slate-400 hover:[&>div]:text-white'>
-        <div className='p-2 text-center xl:p-4 flex justify-center content-start w-30'>
+        <div className='p-2 text-center xl:p-4 flex justify-center content-start w-40'>
           <h5 className='text-sm font-medium xsm:text-base'>کد تولید</h5>
         </div>
 
@@ -56,7 +56,7 @@ const PersonnelActivitiesTableElm = ({
               : "border-b border-slate-400 pb-4 sm:pb-0 sm:border-stroke "
           }  gap-0`}
           key={key}>
-          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-30'>
+          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-40'>
             <p className='text-black '>
               <span className='inline-block sm:hidden me-2'>کد تولید:</span>
               {item.productionCode.toUpperCase()}
