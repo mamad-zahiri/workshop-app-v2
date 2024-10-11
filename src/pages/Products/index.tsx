@@ -7,17 +7,20 @@ import TableOne from "./ProductsTable"
 const products: Array<Product> = [
   {
     name: "سوییچ سنسور Tiba",
-    code: "T",
+    // code: "T",
+    picture: "products/p1.png",
     price: 35000,
   },
   {
     name: "سوییچ سنسور ABS",
-    code: "A",
+    // code: "A",
+    picture: "products/p1.png",
     price: 22000,
   },
   {
     name: "سوییچ سنسور CBS",
-    code: "C",
+    // code: "C",
+    picture: "products/p1.png",
     price: 28000,
   },
 ]
