@@ -1,7 +1,14 @@
 export interface Product {
     name: string
-    code: string
+    // code: string
+    picture: string // picture url
     price: number
+}
+export interface Material {
+    name: string
+    // code: string
+    price: number
+    picture: string
 }
 
 export interface PersonnelActivity {
