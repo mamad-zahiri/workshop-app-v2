@@ -1,14 +1,13 @@
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb"
 import FormLayout from "./FormLayout"
+import MaterialsTableElm from "./ActivitiesTable"
 
 const MaterialsElm = () => {
   return (
     <>
       <Breadcrumb pageName='مواد اولیه' />
 
-      <div className='flex flex-col'>
-        <FormLayout />
-      </div>
+      <MaterialsTableElm materials={materials} />
     </>
   )
 }
