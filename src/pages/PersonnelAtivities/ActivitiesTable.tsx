@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { datetimeToStr, latinToPersianDigit } from "../../common/helpers"
 import { PersonnelActivity } from "../../types"
 
@@ -60,12 +61,15 @@ const PersonnelActivitiesTableElm = ({
               : "border-b border-slate-400 pb-4 sm:pb-0 sm:border-stroke "
           }  gap-0`}
           key={key}>
-          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-40'>
+          <Link
+            to='/personnel-activities/show'
+            state={{ personnelActivity: item }}
+            className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-40 block'>
             <p className='text-black '>
               <span className='inline-block sm:hidden me-2'>کد تولید:</span>
               {item.productionCode.toUpperCase()}
             </p>
-          </div>
+          </Link>
 
           <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-35'>
             <p className='text-black ' dir='ltr'>

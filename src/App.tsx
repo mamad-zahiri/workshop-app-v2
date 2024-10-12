@@ -12,6 +12,10 @@ import MaterialsElm from "./pages/Materials"
 import PersonnelActivities from "./pages/PersonnelAtivities"
 import PersonnelManagementElm from "./pages/PersonnelManagement"
 import Products from "./pages/Products"
+import SingleProductFormElm from "./pages/Products/SingleProductForm"
+import SingleMaterialmElm from "./pages/Materials/SingleMaterialForm"
+import SinglePersonActivityFormElm from "./pages/PersonnelAtivities/SinglePersonActivityForm"
+import SinglePersonFormElm from "./pages/PersonnelManagement/SinglePersonForm"
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true)
@@ -51,6 +55,16 @@ function App() {
         />
 
         <Route
+          path='/products/show'
+          element={
+            <>
+              <PageTitle title='محصولات | نمایش' />
+              <SingleProductFormElm />
+            </>
+          }
+        />
+
+        <Route
           path='/materials'
           element={
             <>
@@ -61,11 +75,31 @@ function App() {
         />
 
         <Route
+          path='/materials/show'
+          element={
+            <>
+              <PageTitle title='مواد اولیه | نمایش' />
+              <SingleMaterialmElm />
+            </>
+          }
+        />
+
+        <Route
           path='/personnel-activities'
           element={
             <>
               <PageTitle title='فعالیت پرسنل' />
               <PersonnelActivities />
+            </>
+          }
+        />
+
+        <Route
+          path='/personnel-activities/show'
+          element={
+            <>
+              <PageTitle title='فعالیت پرسنل | نمایش' />
+              <SinglePersonActivityFormElm />
             </>
           }
         />
@@ -86,6 +120,16 @@ function App() {
             <>
               <PageTitle title='مدیریت پرسنل' />
               <PersonnelManagementElm />
+            </>
+          }
+        />
+
+        <Route
+          path='/personnel-management/show'
+          element={
+            <>
+              <PageTitle title='مدیریت پرسنل | نمایش' />
+              <SinglePersonFormElm />
             </>
           }
         />

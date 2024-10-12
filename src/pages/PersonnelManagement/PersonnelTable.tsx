@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { latinToPersianDigit } from "../../common/helpers"
 import { PersonnelData } from "../../types"
 
@@ -44,9 +45,14 @@ const PersonnelActivitiesTableElm = ({
             key === personnel.length - 1 ? "" : "border-b border-stroke "
           }  gap-0`}
           key={key}>
-          <div className='p-2 text-start py-4 w-full sm:w-30'>
+          <Link
+            to='/personnel-management/show'
+            state={{ personnelData: item }}
+            className='p-2 text-start py-4 w-full sm:w-30'>
+            {/* <div className='p-2 text-start py-4 w-full sm:w-30'> */}
             <p className='text-black text-center'>{item.personnelCode.toUpperCase()}</p>
-          </div>
+            {/* </div>i */}
+          </Link>
 
           <div className='p-2 text-start py-4 w-full sm:w-40'>
             <p className='text-black text-center'>{item.lastName}</p>

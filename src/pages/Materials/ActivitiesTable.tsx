@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { latinToPersianDigit } from "../../common/helpers"
 import { Material } from "../../types"
 
@@ -23,9 +24,12 @@ const MaterialsTableElm = ({ materials = [] }: { materials: Array<Material> }) =
             key === materials.length - 1 ? "" : "border-b border-stroke "
           }  gap-0`}
           key={key}>
-          <div className='p-2 text-start py-4 w-full sm:w-30'>
+          <Link
+            to='/materials/show'
+            state={{ material: item }}
+            className='p-2 text-start py-4 w-full sm:w-30 block'>
             <p className='text-black text-center'>{item.name}</p>
-          </div>
+          </Link>
 
           <div className='p-2 text-start py-4 w-full sm:w-30'>
             <p className='text-black text-center'>

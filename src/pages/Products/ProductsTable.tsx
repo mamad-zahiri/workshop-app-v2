@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { latinToPersianDigit } from "../../common/helpers"
 import { Product } from "../../types"
 
@@ -23,9 +24,12 @@ const TableOne = ({ products = [] }: { products: Product[] }) => {
           className={`hover:bg-slate-200 flex justify-start ${
             key === products.length - 1 ? "" : "border-b border-stroke "
           }  gap-0`}>
-          <div className='p-2 text-start py-4 w-full sm:w-70'>
+          <Link
+            to='/products/show'
+            state={{ product: item }}
+            className='p-2 text-start py-4 w-full sm:w-70 block'>
             <p className='text-black text-center'>{item.name}</p>
-          </div>
+          </Link>
 
           <div className='p-2 text-start py-4 w-full sm:w-50'>
             <p className='text-black text-center'>
