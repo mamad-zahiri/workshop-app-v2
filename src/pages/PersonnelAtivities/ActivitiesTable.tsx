@@ -25,6 +25,10 @@ const PersonnelActivitiesTableElm = ({
           <h5 className='text-sm font-medium xsm:text-base'>تعداد</h5>
         </div>
 
+        <div className='p-2 text-center sm:block xl:p-4 flex justify-center content-start w-22'>
+          <h5 className='text-sm font-medium xsm:text-base'>قیمت</h5>
+        </div>
+
         <div className='p-2 text-center sm:block xl:p-4 flex justify-center content-start w-35'>
           <h5 className='text-sm font-medium xsm:text-base'>زمان تحویل</h5>
         </div>
@@ -83,6 +87,13 @@ const PersonnelActivitiesTableElm = ({
             <p className='text-black '>
               <span className='inline-block sm:hidden me-2'>تعداد:</span>
               {latinToPersianDigit(item.number)}
+            </p>
+          </div>
+
+          <div className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-22'>
+            <p className='text-black '>
+              <span className='inline-block sm:hidden me-2'>قیمت:</span>
+              {latinToPersianDigit(item.price)}
             </p>
           </div>
 

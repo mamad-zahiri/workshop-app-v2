@@ -16,6 +16,7 @@ export interface PersonnelActivity {
     assignedAt: string
     activity: string
     number: string
+    price: string
     finsishedAt: string
     borrowedTool: Array<string>
     personnelCode: string

@@ -6,18 +6,18 @@ const ActivitiesTableElm = ({ activities = [] }: { activities: Array<Activity> }
     <>
       <div className='flex justify-start bg-slate-100  border-b hover:[&>div]:bg-slate-400 hover:[&>div]:text-white'>
         <div className='text-center p-4 flex justify-center content-start w-20'>
-          <h5 className='text-sm font-medium xsm:text-base'>شماره</h5>
+          <h5 className='text-sm font-medium xsm:text-base'>ترتیب</h5>
         </div>
 
         <div className='text-center p-4 flex justify-center content-start w-80'>
           <h5 className='text-sm font-medium xsm:text-base'>نام</h5>
         </div>
 
-        <div className='text-center p-4 flex justify-center content-start w-80'>
+        <div className='hidden sm:flex text-center p-4 justify-center content-start w-80'>
           <h5 className='text-sm font-medium xsm:text-base'>ملاحظات</h5>
         </div>
 
-        <div className='text-center p-4 flex justify-center content-start w-50'>
+        <div className='hidden sm:flex text-center p-4 justify-center content-start w-50'>
           <h5 className='text-sm font-medium xsm:text-base'>دستمزد</h5>
         </div>
       </div>
@@ -29,18 +29,18 @@ const ActivitiesTableElm = ({ activities = [] }: { activities: Array<Activity> }
           }  gap-0`}
           key={key}>
           <div className='p-2 text-start py-4 w-20'>
-            <p className='text-black '>{item.order}</p>
+            <p className='text-black text-center'>{item.order}</p>
           </div>
 
           <div className='p-2 text-start py-4 w-80'>
             <p className='text-black '>{item.name}</p>
           </div>
 
-          <div className='p-2 text-start py-4 w-80'>
+          <div className='hidden sm:block p-2 text-start py-4 w-80'>
             <p className='text-black '>{item.description}</p>
           </div>
 
-          <div className='p-2 text-center py-4 w-50'>
+          <div className='hidden sm:block p-2 text-center py-4 w-50'>
             <p className='text-black '>
               {latinToPersianDigit(item.unit_price.toLocaleString())} تومان
             </p>

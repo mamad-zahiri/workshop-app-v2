@@ -12,8 +12,8 @@ const allTasks = async () => {
 }
 const userTasks = async () => {
     try {
-        const res = await axios.get(ApiUrls.activities.userTasks)
-        return res.data
+        // const res = await axios.get(ApiUrls.activities.userTasks)
+        // return res.data
     }
     catch {
         return null

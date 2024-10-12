@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 import { Route, Routes, useLocation } from "react-router-dom"
-
 import Loader from "./common/Loader"
 import PageTitle from "./components/PageTitle"
 import DefaultLayout from "./layout/DefaultLayout"
+import AddAvailableActivities from "./pages/AddAvailableAtivities"
 import AddPersonnelActivityForm from "./pages/AddPersonnelAtivities"
 import AddProductForm from "./pages/AddProducts"
 import SignIn from "./pages/Authentication/SignIn"
@@ -12,8 +12,6 @@ import MaterialsElm from "./pages/Materials"
 import PersonnelActivities from "./pages/PersonnelAtivities"
 import PersonnelManagementElm from "./pages/PersonnelManagement"
 import Products from "./pages/Products"
-import Profile from "./pages/Profile"
-import AddAvailableActivities from "./pages/AddAvailableAtivities"
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true)

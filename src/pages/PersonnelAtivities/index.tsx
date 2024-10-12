@@ -1,15 +1,23 @@
 import { Link } from "react-router-dom"
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb"
 import { PersonnelActivity } from "../../types"
-import { userTasks } from "../AvailableAtivities/server"
 import PersonnelActivitiesTableElm from "./ActivitiesTable"
-
-const res = await userTasks()
-console.log(res)
 
 const activities: Array<PersonnelActivity> = [
   {
     productionCode: "14000323T1-1500",
+    price: "900",
+    assignedAt: "2020-08-05T13:17:27Z",
+    activity: "لحیم کاری",
+    number: "5,768",
+    finsishedAt: "2020-08-05T13:17:27Z",
+    borrowedTool: ["هویه 40w", "برس"],
+    personnelCode: "h9p49m",
+    wasteMaterials: [],
+  },
+  {
+    productionCode: "14000323T2-1500",
+    price: "1400",
     assignedAt: "2020-08-05T13:17:27Z",
     activity: "لحیم کاری",
     number: "5,768",
@@ -20,6 +28,7 @@ const activities: Array<PersonnelActivity> = [
   },
   {
     productionCode: "14000323T1-1500",
+    price: "0",
     assignedAt: "2020-12-13T13:17:27.853707Z",
     activity: "وارنیش",
     number: "4,635",
@@ -30,6 +39,7 @@ const activities: Array<PersonnelActivity> = [
   },
   {
     productionCode: "14000323T1-1500",
+    price: "0",
     assignedAt: "2020-03-22T13:17:27.853707Z",
     activity: "پرس سرسیم",
     number: "4,290",
@@ -40,6 +50,7 @@ const activities: Array<PersonnelActivity> = [
   },
   {
     productionCode: "14000323T1-1500",
+    price: "0",
     assignedAt: "2020-03-22T13:17:27.853707Z",
     activity: "بسته بندی",
     number: "3,580",
@@ -50,6 +61,7 @@ const activities: Array<PersonnelActivity> = [
   },
   {
     productionCode: "14000323T1-1500",
+    price: "0",
     assignedAt: "2020-03-22T13:17:27.853707Z",
     activity: "لحیم کاری",
     number: "6,768",
