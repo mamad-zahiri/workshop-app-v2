@@ -33,6 +33,11 @@ export interface PersonnelData {
     personnelCode: string
 }
 
+export interface PersonnelPayment {
+    date: string
+    amount: number
+}
+
 export interface Activity {
     order: number
     name: string

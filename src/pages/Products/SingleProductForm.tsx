@@ -34,10 +34,10 @@ var SingleProductFormElm = () => {
               </div>
               <div className='mb-6'>
                 <label className='block text-gray-800 font-bold mb-2'>عکس</label>
+                <img src={product.picture} className='h-40 mb-6' alt='' />
                 <input
                   className='appearance-none border border-stroke rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:outline'
                   type='file'
-                  // defaultValue={product.picture}
                 />
               </div>
               <button

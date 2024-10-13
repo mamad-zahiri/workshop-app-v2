@@ -14,21 +14,25 @@ const PersonnelActivitiesTableElm = ({
           <h5 className='text-sm font-medium xsm:text-base'>کد پرسنلی</h5>
         </div>
 
-        <div className='text-center p-4 flex justify-center content-start w-full sm:w-40'>
+        <div className='hidden sm:flex text-center p-4 justify-center content-start w-full sm:w-40'>
           <h5 className='text-sm font-medium xsm:text-base'>نام خانوادگی</h5>
         </div>
 
-        <div className='text-center p-4 flex justify-center content-start w-full sm:w-40'>
+        <div className='hidden sm:flex text-center p-4 justify-center content-start w-full sm:w-40'>
           <h5 className='text-sm font-medium xsm:text-base'>نام</h5>
         </div>
 
-        <div className='hidden sm:flex text-center p-4 justify-center content-start w-40'>
-          <h5 className='text-sm font-medium xsm:text-base'>دریافت شده</h5>
+        <div className='flex sm:hidden text-center p-4 justify-center content-start w-full'>
+          <h5 className='text-sm font-medium xsm:text-base'>نام</h5>
         </div>
 
-        <div className='hidden sm:flex text-center p-4 justify-center content-start w-40'>
-          <h5 className='text-sm font-medium xsm:text-base'>بستانکاری</h5>
+        <div className='text-center p-4 flex justify-center content-start w-full sm:w-40'>
+          <h5 className='text-sm font-medium xsm:text-base'>کارکرد (تومان)</h5>
         </div>
+
+        {/* <div className='hidden sm:flex text-center p-4 justify-center content-start w-40'>
+          <h5 className='text-sm font-medium xsm:text-base'>بستانکاری</h5>
+        </div> */}
 
         <div className='hidden sm:flex text-center p-4 justify-center content-start w-40'>
           <h5 className='text-sm font-medium xsm:text-base'>شماره تماس</h5>
@@ -37,6 +41,10 @@ const PersonnelActivitiesTableElm = ({
         <div className='hidden sm:flex text-center p-4 justify-center content-start w-40'>
           <h5 className='text-sm font-medium xsm:text-base'>کد ملی</h5>
         </div>
+
+        {/* <div className='hidden sm:flex text-center p-4 justify-center content-start w-80'>
+          <h5 className='text-sm font-medium xsm:text-base'>بیشتر</h5>
+        </div> */}
       </div>
 
       {personnel.map((item, key) => (
@@ -54,25 +62,31 @@ const PersonnelActivitiesTableElm = ({
             {/* </div>i */}
           </Link>
 
-          <div className='p-2 text-start py-4 w-full sm:w-40'>
+          <div className='hidden sm:block p-2 text-start py-4 w-full sm:w-40'>
             <p className='text-black text-center'>{item.lastName}</p>
           </div>
 
-          <div className='p-2 text-start py-4 w-full sm:w-40'>
+          <div className='hidden sm:block p-2 text-start py-4 w-full sm:w-40'>
             <p className='text-black text-center'>{item.firstName}</p>
           </div>
 
-          <div className='hidden sm:block p-2 text-start py-4 w-40'>
+          <div className='block sm:hidden p-2 text-start py-4 w-full sm:w-40'>
             <p className='text-black text-center'>
-              {latinToPersianDigit(String(item.payed))}
+              {item.lastName} - {item.firstName}
             </p>
           </div>
 
-          <div className='hidden sm:block p-2 text-start py-4 w-40'>
+          <Link to="/personnel-management/payments" state={{}} className='p-2 text-start py-4 w-full sm:w-40'>
+            <p className='text-black text-center'>
+              {latinToPersianDigit(String(item.payed))}
+            </p>
+          </Link>
+
+          {/* <div className='hidden sm:block p-2 text-start py-4 w-40'>
             <p className='text-black text-center'>
               {latinToPersianDigit(String(item.notPayed))}
             </p>
-          </div>
+          </div> */}
 
           <div className='hidden sm:block p-2 text-start py-4 w-full sm:w-40'>
             <p className='text-black text-center'>{item.phone}</p>
@@ -81,6 +95,14 @@ const PersonnelActivitiesTableElm = ({
           <div className='hidden sm:block p-2 text-start py-4 w-40'>
             <p className='text-black text-center'>{item.nationalCode}</p>
           </div>
+
+          {/* <div className='hidden sm:block p-2 text-start py-4 w-40'>
+            <p className='text-black text-center'>
+              <Link to=''>
+                <img src='/money.png' alt='' />
+              </Link>
+            </p>
+          </div> */}
         </div>
       ))}
     </>

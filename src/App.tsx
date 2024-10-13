@@ -16,6 +16,7 @@ import SingleProductFormElm from "./pages/Products/SingleProductForm"
 import SingleMaterialmElm from "./pages/Materials/SingleMaterialForm"
 import SinglePersonActivityFormElm from "./pages/PersonnelAtivities/SinglePersonActivityForm"
 import SinglePersonFormElm from "./pages/PersonnelManagement/SinglePersonForm"
+import PersonnelPaymentsTableElm from "./pages/PersonnelManagement/PersonnelPaymnets"
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true)
@@ -120,6 +121,16 @@ function App() {
             <>
               <PageTitle title='مدیریت پرسنل' />
               <PersonnelManagementElm />
+            </>
+          }
+        />
+
+        <Route
+          path='/personnel-management/payments'
+          element={
+            <>
+              <PageTitle title='مدیریت پرسنل' />
+              <PersonnelPaymentsTableElm />
             </>
           }
         />
