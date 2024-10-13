@@ -25,7 +25,7 @@ const TableOne = ({ products = [] }: { products: Product[] }) => {
             key === products.length - 1 ? "" : "border-b border-stroke "
           }  gap-0`}>
           <Link
-            to='/products/show'
+            to='/products/edit'
             state={{ product: item }}
             className='p-2 text-start py-4 w-full sm:w-70 block'>
             <p className='text-black text-center'>{item.name}</p>

@@ -55,7 +55,7 @@ function App() {
         />
 
         <Route
-          path='/products/show'
+          path='/products/edit'
           element={
             <>
               <PageTitle title='محصولات | نمایش' />
@@ -75,7 +75,7 @@ function App() {
         />
 
         <Route
-          path='/materials/show'
+          path='/materials/edit'
           element={
             <>
               <PageTitle title='مواد اولیه | نمایش' />
@@ -95,7 +95,7 @@ function App() {
         />
 
         <Route
-          path='/personnel-activities/show'
+          path='/personnel-activities/edit'
           element={
             <>
               <PageTitle title='فعالیت پرسنل | نمایش' />
@@ -125,7 +125,7 @@ function App() {
         />
 
         <Route
-          path='/personnel-management/show'
+          path='/personnel-management/edit'
           element={
             <>
               <PageTitle title='مدیریت پرسنل | نمایش' />

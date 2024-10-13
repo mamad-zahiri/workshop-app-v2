@@ -62,7 +62,7 @@ const PersonnelActivitiesTableElm = ({
           }  gap-0`}
           key={key}>
           <Link
-            to='/personnel-activities/show'
+            to='/personnel-activities/edit'
             state={{ personnelActivity: item }}
             className='p-2 sm:text-center sm:py-4 w-full text-right sm:w-40 block'>
             <p className='text-black '>

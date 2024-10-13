@@ -25,7 +25,7 @@ const MaterialsTableElm = ({ materials = [] }: { materials: Array<Material> }) =
           }  gap-0`}
           key={key}>
           <Link
-            to='/materials/show'
+            to='/materials/edit'
             state={{ material: item }}
             className='p-2 text-start py-4 w-full sm:w-30 block'>
             <p className='text-black text-center'>{item.name}</p>
