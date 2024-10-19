@@ -159,6 +159,16 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   فعالیت های تولید سنسور
                 </NavLink>
               </li>
+              <li onClick={() => setSidebarOpen(false)}>
+                <NavLink
+                  to='/orders'
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark ${
+                    pathname.includes("available-activities") && "bg-graydark "
+                  }`}>
+                  <img src='/orders.png' className='h-5' />
+                  سفارش ها
+                </NavLink>
+              </li>
               {/* <!-- Menu Item Personnel Management --> */}
 
               {/* <!-- Menu Item Porfile --> */}

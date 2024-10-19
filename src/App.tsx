@@ -9,14 +9,17 @@ import AddProductForm from "./pages/AddProducts"
 import SignIn from "./pages/Authentication/SignIn"
 import AvailableActivitiesElm from "./pages/AvailableAtivities"
 import MaterialsElm from "./pages/Materials"
+import SingleMaterialmElm from "./pages/Materials/SingleMaterialForm"
+import Orders from "./pages/Orders"
 import PersonnelActivities from "./pages/PersonnelAtivities"
+import SinglePersonActivityFormElm from "./pages/PersonnelAtivities/SinglePersonActivityForm"
 import PersonnelManagementElm from "./pages/PersonnelManagement"
+import PersonnelPaymentsTableElm from "./pages/PersonnelManagement/PersonnelPaymnets"
+import SinglePersonFormElm from "./pages/PersonnelManagement/SinglePersonForm"
 import Products from "./pages/Products"
 import SingleProductFormElm from "./pages/Products/SingleProductForm"
-import SingleMaterialmElm from "./pages/Materials/SingleMaterialForm"
-import SinglePersonActivityFormElm from "./pages/PersonnelAtivities/SinglePersonActivityForm"
-import SinglePersonFormElm from "./pages/PersonnelManagement/SinglePersonForm"
-import PersonnelPaymentsTableElm from "./pages/PersonnelManagement/PersonnelPaymnets"
+import SingleOrderFormElm from "./pages/Orders/SingleOrderForm"
+import AddOrderFormElm from "./pages/Orders/AddOrderForm"
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true)
@@ -164,6 +167,37 @@ function App() {
             </>
           }
         />
+
+        <Route
+          path='/orders'
+          element={
+            <>
+              <PageTitle title='سفارش ها' />
+              <Orders />
+            </>
+          }
+        />
+
+        <Route
+          path='/orders/edit'
+          element={
+            <>
+              <PageTitle title='تفییر سفارش' />
+              <SingleOrderFormElm />
+            </>
+          }
+        />
+
+        <Route
+          path='/orders/add'
+          element={
+            <>
+              <PageTitle title='اضافه کردن سفارش' />
+              <AddOrderFormElm />
+            </>
+          }
+        />
+
         {/* <Route
           path='/profile'
           element={

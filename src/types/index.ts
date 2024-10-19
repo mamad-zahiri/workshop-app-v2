@@ -4,6 +4,14 @@ export interface Product {
     picture: string // picture url
     price: number
 }
+
+export interface Order {
+    product: string
+    date: string
+    group: number
+    number: number
+}
+
 export interface Material {
     name: string
     // code: string
