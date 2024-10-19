@@ -6,19 +6,19 @@ const OrdersListTableElm = ({ orders = [] }: { orders: Order[] }) => {
   return (
     <>
       <div className='flex justify-start bg-slate-100  border-b hover:[&>div]:bg-slate-400 hover:[&>div]:text-white'>
-        <div className='text-center p-4 flex justify-center content-start w-2/3 sm:w-70'>
+        <div className='text-center p-4 flex justify-center content-start w-full sm:w-70'>
           <h5 className='text-sm font-medium uppercase xsm:text-base'>محصول</h5>
         </div>
 
-        <div className='text-center p-4 flex justify-center content-start w-1/3 sm:w-50'>
+        <div className='text-center p-4 flex justify-center content-start w-full sm:w-50'>
           <h5 className='text-sm font-medium uppercase xsm:text-base'>تاریخ</h5>
         </div>
 
-        <div className='text-center p-4 flex justify-center content-start w-1/3 sm:w-50'>
+        <div className='text-center p-4 flex justify-center content-start w-full sm:w-50'>
           <h5 className='text-sm font-medium uppercase xsm:text-base'>گروه</h5>
         </div>
 
-        <div className='text-center p-4 flex justify-center content-start w-1/3 sm:w-50'>
+        <div className='text-center p-4 flex justify-center content-start w-full sm:w-50'>
           <h5 className='text-sm font-medium uppercase xsm:text-base'>تعداد</h5>
         </div>
       </div>
@@ -31,19 +31,19 @@ const OrdersListTableElm = ({ orders = [] }: { orders: Order[] }) => {
           <Link
             to='/orders/edit'
             state={{ order: item }}
-            className='p-2 text-start py-4 w-2/3 sm:w-70 block'>
+            className='p-2 text-start py-4 w-full sm:w-70'>
             <p className='text-black text-center'>{item.product}</p>
           </Link>
 
-          <div className='p-2 text-start py-4 w-1/3 sm:w-50'>
+          <div className='p-2 text-start py-4 w-full sm:w-50'>
             <p className='text-black text-center'>{latinToPersianDigit(item.date)}</p>
           </div>
 
-          <div className='hidden sm:block p-2 text-start py-4 w-full sm:w-50'>
+          <div className='p-2 text-start py-4 w-full sm:w-50'>
             <p className='text-black text-center'>{item.group}</p>
           </div>
 
-          <div className='hidden sm:block p-2 text-start py-4 w-full sm:w-50'>
+          <div className='p-2 text-start py-4 w-full sm:w-50'>
             <p className='text-black text-center'>{item.number}</p>
           </div>
         </div>
